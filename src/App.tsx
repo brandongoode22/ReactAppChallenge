@@ -1,14 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Homepage from './Components/Homepage';
+import InputField from './Components/InputField';
 
-function App() {
+let name: string = "Brandon";
+
+
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <Homepage></Homepage>
-      </header>
+   <InputField></InputField>
     </div>
   );
 }
