@@ -1,20 +1,17 @@
-import React, { useState } from 'react';
-import './App.css';
-import Homepage from './Components/Homepage';
-import InputField from './Components/InputField';
-
-let name: string = "Brandon";
-
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Route } from "react-router-dom";
+import Monsters from "./Components/Monsters";
+import Homepage from "./Components/Homepage";
 
 const App: React.FC = () => {
-  const [todo, settodo] = useState<string>("second")
-
-  console.log(todo);
   return (
     <div className="App">
-   <InputField todo={todo} settodo={settodo}></InputField>
+      <BrowserRouter>
+        <Homepage />
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
