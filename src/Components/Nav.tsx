@@ -1,15 +1,13 @@
 import React from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import { useNavigate } from "react-router";
-
+import { useNavigate } from "react-router-dom";
 
 const NavHeader = () => {
-  
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-const handleNavigationClick = (path: string): void => {
-  navigate(path);
-};
+  const handleNavigationClick = (path: string): void => {
+    navigate(path);
+  };
   return (
     <Navbar>
       <Nav>
